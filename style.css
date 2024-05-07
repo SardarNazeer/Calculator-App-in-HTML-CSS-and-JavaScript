@@ -21,6 +21,7 @@ body{
 }
 
 .calculator-screen{
+    overflow: hidden;
     width: 100%;
     font-size: 30px;
     text-align: right;

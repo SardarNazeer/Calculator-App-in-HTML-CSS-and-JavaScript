@@ -17,23 +17,23 @@
             <button type="button" onclick="inputDigit('7');">7</button>
             <button type="button" onclick="inputDigit('8');">8</button>
             <button type="button" onclick="inputDigit('9');">9</button>
-            <button type="button">&#8730;</button>
+            <button type="button" onclick="getSquareRoot();">&#8730;</button>
             <button type="button" onclick="inputDigit('4');">4</button>
             <button type="button" onclick="inputDigit('5');">5</button>
             <button type="button" onclick="inputDigit('6');">6</button>
-            <button type="button" class="operator">&divide;</button>
+            <button type="button" class="operator" onclick="handleOperator('/')">&divide;</button>
             <button type="button" onclick="inputDigit('1');">1</button>
             <button type="button" onclick="inputDigit('2');">2</button>
             <button type="button" onclick="inputDigit('3');">3</button>
-            <button type="button" class="operator">&times;</button>
+            <button type="button" class="operator" onclick="handleOperator('*')">&times;</button>
             <button type="button" onclick="inputDigit('0');">0</button>
             <button type="button" onclick="inputDecimal();">.</button>
-            <button type="button">+/-</button>
-            <button type="button" class="operator">+</button>
-            <button type="button" class="all-clear">AC</button>
-            <button type="button" class="clear-end">CE</button>
-            <button type="button" class="operator">-</button>
-            <button type="button" class="operator">=</button>
+            <button type="button" onclick="toggleSign();">+/-</button>
+            <button type="button" class="operator" onclick="handleOperator('+')">+</button>
+            <button type="button" class="all-clear" onclick="allClear();">AC</button>
+            <button type="button" class="clear-end" onclick="clearEntry();">CE</button>
+            <button type="button" class="operator" onclick="handleOperator('-')">-</button>
+            <button type="button" class="operator" onclick="handleOperator('=')">=</button>
         </div>
     </div>
 
